@@ -17,8 +17,9 @@ Based on [the Hierarchical_bootstrap_Matlab repository](https://github.com/jenwa
 * `varargin` -  grouping variables with same size as data. 1st variable corresponds to first level, 2nd to second level, and so on.
 
 **OUTPUTS:**
-* `btstats -   1-d array with length nreps. mean of the resampled population for each run.
+* `btstats` -   1-d array with length nreps. mean of the resampled population for each run.
  
 **Example:**
 ```matlab
-btstats = hierBoot(data, 10000, lvl1_grp, lvl2_grp);```
+btstats = hierBoot(data, 10000, lvl1_grp, lvl2_grp);
+```

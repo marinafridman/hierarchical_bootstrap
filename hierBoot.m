@@ -41,8 +41,9 @@ for j = 1:nrep %loop through repetitions
         %initialize variable for next level
         lvls_j{m+1} = nan(size(data));
         
+        grps = unique(lvls_j{m})';
         % loop through groups of level (eg same animal,session, etc)
-        for k = 1:length(unique(lvls_j{m}))
+        for k = grps
             % find all instances of next level belonging to current level group - this is
             % the pool
             pool =  lvls{m+1}(lvls{m} == k);
